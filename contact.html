@@ -9,8 +9,27 @@
 <body>
     <!-- Lets start -->
     <hr>
-        <a href="index.html">Home</a> |
-        <a href="contact.html">Contact</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="contact.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <a href="gallery.html">Gallery</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="search">Search &nbsp;</label><input type="search">
     <hr>
     <table cellpadding = "30px" cellspacing = "10px">
         <tr><td><img src="./Asset/Images/profilepic.png" alt="Profile Picture"></td>
@@ -28,16 +47,20 @@
     <form action="mailto:se.natnael.bekabtu@gmail.com" enctype="UTF-8" method="POST">
         <table>
             <tr><td><label for="fname">First Name: </label></td>
-            <td><input type="text" name="fName" id="fName" required pattern="[a-z]{1,20}"></td>
+            <td><input type="text" name="fName" id="fName" required pattern="[a-z]{1,20}" placeholder="First-name"></td>
             </tr>
             <tr><td><label for="lname">Last Name: </label></td>
-                <td><input type="text" name="lname" id="lname" required pattern="[a-z]{1,20}"></td>
+                <td><input type="text" name="lname" id="lname" required pattern="[a-z]{1,20}" placeholder="Last-name"></td>
             </tr>
             <tr><td><label for="email">Email: </label></td>
-                <td><input type="email" name="email" id="email" required><br></td>
+                <td><input type="email" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="telephone">Telephone number: </label></td>
+                <td><input type="tel" name="telephone" id=""></td>
             </tr>
             <tr><td><label for="password">Password: </label></td>
-                <td><input type="password" name="password" id="pass"></td>
+                <td><input type="password" name="password" id="password" pattern="[A-Za-z0-9]{8}" title="password"></td>
             </tr>
             <tr>
                 <td><label for="country">Where are you from?</label></td>
