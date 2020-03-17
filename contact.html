@@ -5,6 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natnael B.</title>
+    <style>
+        body{
+            background-image: url("Asset/Images/color_day.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #profile{
+            float: left;
+            margin-right: 40px;
+            padding: 30px;
+            width: 300px;
+            width: 300px;
+            border-radius: 100%;
+        }
+        #intro{
+            position: relative;
+            top:40px
+        }
+        h1{
+            position: relative;
+            top: 30px;
+        }
+        form{
+            color: red;
+        }
+        #clear{
+            clear: left;
+        }
+
+    </style>
 </head>
 <body>
     <!-- Lets start -->
@@ -31,19 +61,16 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <label for="search">Search &nbsp;</label><input type="search">
     <hr>
-    <table cellpadding = "30px" cellspacing = "10px">
-        <tr><td><img src="./Asset/Images/profilepic.png" alt="Profile Picture"></td>
-        <td><h1>Natnael Bekabtu Arwaga</h1>
-            <h3>Student at AAiT University</h3>
-            <p>My name is Natnael Bekabtu Arwaga. I am <strong>software engineering</strong>  student at <em>AAiT</em> . 
-                Other bio information... Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Nam iusto fuga ut hic perferendis minima eligendi nihil rem saepe repudiandae recusandae ea esse voluptatibus excepturi harum sed, 
-                similique accusantium fugit.</p>
-        </td>
-    </tr>
-    </table>
-
-    <h3>Contact Us...</h3>
+    <img src="./Asset/Images/profilepic.png" alt="Profile Picture" id="profile">
+    <h1>Natnael Bekabtu</h1>
+    <p id="intro">My name is Natnael Bekabtu Arwaga. I am <strong>software engineering</strong>  student at <em>AAiT</em> . 
+        Other bio information... Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Nam iusto fuga ut hic perferendis minima eligendi nihil rem saepe repudiandae recusandae ea esse voluptatibus excepturi harum sed, 
+        similique accusantium fugit.</p>
+    <div id="clear">
+        <p>Contact us...</p>
+    </div>
+    
     <form action="mailto:se.natnael.bekabtu@gmail.com" enctype="UTF-8" method="POST">
         <table cellspacing="15px">
             <tr><td><label for="fname">First Name: </label></td>
