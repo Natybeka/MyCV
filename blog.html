@@ -17,10 +17,10 @@
             </ul>
         </nav>
     </header>
-    <div id="container">
+    <div class="container">
         <section>
-            <h1 class="title">Relative size units for responsive web design</h1>
             <article>
+                <h1 class="title">Relative size units for responsive web design</h1>
                 <p>Before the advent of relative  size units, pixel units were largely used to size items in the viewport (available window). <em> px </em> values are exactly intrepreted by the browser as they are. pixel is an absolute size unit 
                     meaning that it doesn't take into consideration the scalability of the web design when it is used across different devices with different screen sizes and resolutions, not to mention the need for the user to use 
                     the zoom feature of a browser for better visibility. Other absolute units include cm, mm and pt. Relative length units on the other hand specify a length relative to another property. Examples of relative units include
@@ -29,7 +29,7 @@
                     to the parent container. For example, if the there is a div tag inside the body tag and the its width attribute is set to 50%, then the browser translates it to "half the length of the body tag". If the parent container doesn't have a 
                     specified length attribute value then it goes up the browser tries to find the next parent in DOM tree heirarchy (in the example above the body tag) and take the corresponding relative measurement. A simple example is shown below.
                 </p>
-                <img src="./Asset/Blog Images/percent_example.PNG" alt="percent size demonstration" id >
+                <img src="./Asset/Blog Images/percent_example.PNG" alt="percent size demonstration" >
                 <p>Percentage units are commonly used to specify the width and height of containers and to create responsive images. If the width property of an image is set to 100%, the image will be responsive and scales nicely for various devices
                     A better option in many may be to use the "max-width" or "min-width" attribute, which makes the image scaled up of down if the viewport is larger or smaller than its original size. 
                 </p>
@@ -46,12 +46,9 @@
                  padding and margin will not be proportional. Instead <em>rem</em> is recommended for setting the font-size attribute because it inherts attributes directly from the parent element. This gives more consistent resizing and
                  ensures whatever default size a user's browser may have, the layout will adjust accordingly.    
             </p>
-            </article>
             <p class="date">March 17,2020 : 2pm</p>
-        </section> 
-    </div>
-
-
-    
+            </article> 
+        </section>   
+    </div>   
 </body>
 </html>

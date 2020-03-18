@@ -3,24 +3,23 @@ body{
     margin: 10px auto;
 }
 
-#container{
-    background-color: white;
+.container{
+    background-color: white ;
     width: 70%;
     margin-left: 15%;
-    left:10%;
-    text-align: center;
-    align-items: center;
 }
-section{
-    width: 100%;
-    text-align: center;
-    margin-top: 2.5em;
-   
-    font-family: Arial, Helvetica, sans-serif;
+.container > section{
+        
+    width: 80%;
+    margin-left: 10%;
+    padding: 20px;
+    align-self: center;
+
 }
 
-article{
-    width: inherit;
+ article{
+    font-family: sans-serif;
+    width: 100%;
     font-size: 1.5rem;
     text-align: justify;
     line-height: 1.5em;
@@ -31,43 +30,42 @@ img{
 .title{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
-    border-top: dashed blue;
     text-align: left;
 }
+
 .date{
     font-style: italic;
-    font-size: 15px;
+    font-size: 1rem;
     text-align: left;
 
 }
-nav{
-    background-color: rgba(26, 74, 145);
+header > nav{
+    background-color: rgba(26, 74, 145,0.8);
     position: absolute;
-    border-bottom: solid 10px rgb(235, 248, 250);
     top: 0%;
     left: 10%;
     width: 80%;
+    padding: 0%;
 }
 nav > ul > li {
      display: inline;
-     font-size: 2rem;
+     font-size: 1.25rem;
      
  }
- nav > ul{
+nav > ul{
      text-align: center;
      word-spacing: 10em;
  }
-nav > ul{
+nav > ul > li > a{
     text-decoration: none;
-
 }
  
 a:link{
-    color: rgba(233, 120, 89, 0.5);
+    color: rgb(200, 200, 200);
  }
 nav > ul > li > a:hover{
-     color: whitesmoke;
-     background-color: turquoise;
+     color: white;
+     transition: 0.4s ease;
  }
   a:visited{
      color: black;
