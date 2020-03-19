@@ -1,144 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="./Asset/Images/icon_file.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natnael B.</title>
+    <title>My Works</title>
+    <link rel="icon" href="./Asset/Images/icon_file.ico">
+    <style>
+        body{
+            background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(".//Asset//Images//myworks_background.jpg");
+            background-size: cover;   
+        }
+        ul{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            text-align: center;
+            list-style-type: none;
+        }
+        ul li{
+            float:left;
+            width: 20%;
+            text-align: center; 
+            line-height:40px;
+        }
+        ul li a{
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding:10px;
+        }
+        ul li ul li{
+            width: 100%;
+            display: none;
+        }
+        ul li a:hover{
+            color: black;
+            background-color: white;
+            transition:0.2s ease;
+            display: block;
+        }
+        ul li:hover ul li{
+            display: block;
+        }
+        .content{
+            position: absolute;
+            font-family:sans-serif;
+            top: 30%;
+            left:30%;
+            color: white;
+            font-size: 2rem;   
+        }
+        .content a{
+            text-decoration: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border: white solid 1px;
+            color: whitesmoke;
+            padding: 10px;
+        }
+        .content a:hover{
+            background-color: whitesmoke;
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    <!-- Lets start -->
-    <hr>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="contact.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-        <a href="gallery.html">Gallery</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <label for="search">Search &nbsp;</label><input type="search">
-    <hr>
-    <table cellpadding = "30px" cellspacing = "10px">
-        <tr><td><img src="./Asset/Images/profilepic.png" alt="Profile Picture"></td>
-        <td><h1>Natnael Bekabtu Arwaga</h1>
-            <h3>Student at AAiT University</h3>
-            <p>My name is Natnael Bekabtu Arwaga. I am <strong>software engineering</strong>  student at <em>AAiT</em> . 
-                Other bio information... Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Nam iusto fuga ut hic perferendis minima eligendi nihil rem saepe repudiandae recusandae ea esse voluptatibus excepturi harum sed, 
-                similique accusantium fugit.</p>
-        </td>
-    </tr>
-    </table>
-    
-    
-    <h3>Student at AAiT University</h3>
-    <p>My name is Natnael Bekabtu Arwaga. I am <strong>software engineering</strong>  student at <em>AAiT</em> . 
-        Other bio information... Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-        Nam iusto fuga ut hic perferendis minima eligendi nihil rem saepe repudiandae recusandae ea esse voluptatibus excepturi harum sed, 
-        similique accusantium fugit.</p>
-    <h3>Hobbies and Interests</h3>
-    <!-- Lists -->
-    
     <ul>
-        <li>Sports Watching
-            <ul>
-                <li>Football</li>
-                <li>Basketball</li>
-                <li>Baseball</li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#">Assignment IV</a>
+           <ul>
+                <li><a href="question1.html" target="_blank">Question1</a></li>
+                <li><a href="question2.html" target="_blank">Question2</a></li>
+                <li><a href="#" target="_blank">Question3</a></li>
             </ul>
         </li>
-        <li>Reading 
-            <ul>
-                <li>Fiction
-                    <ul>
-                        <li>Harry Potter</li>
-                        <li>A Song of Ice and Fire</li>
-                        
-                    </ul>
-                </li>
-                <li>Educational</li>
-            </ul>
-        </li>
+                
     </ul>
-    <hr>
-
-    <h3>Work Experience</h3>
-<table cellpadding = "10px">
-       <tr><th>Date</th>
-       <th>Job Title</th>
-        <th>Company</th>
-         </tr>
-       <tr>
-        <td>2018-2019</td>
-        <td>Database Adminstrator</td>
-        <td>Freelance Work</td>
-      </tr>
-      <tr>
-        <td>2016-2017</td>
-        <td>Failed Application Startup</td>
-        <td>Freelance Work</td>
-      </tr>
-      <tr>
-        <td>2014-2016</td>
-        <td>Java Developer</td>
-        <td>Freelance Work</td>
-      </tr>
-    
-      <tr>
-        <td>2010-2014</td>
-        <td>Mobile Developer</td>
-        <td>Google</td>
-    </tr>
-    <tr>
-        <td>2009-2010</td>
-        <td>Security Guard </td>
-        <td>Amazon</td>
-    </tr>
-</table>
-    <hr>
-    <h3>Top Skills</h3>
-    <table cellspacing = "10px">
-        <tr>
-            <td>Java Development</td>
-            <td>👍👍👍👍👍</td>
-        </tr>
-        <tr>
-            <td>Python Development</td>
-            <td>👍👍👍👍</td>
-        </tr>
-        <tr>
-            <td>Data Science</td>
-            <td>👍👍👍</td>
-        </tr> 
-        <tr>
-            <td>Cyber Security</td>
-            <td>👍👍👍</td>
-        </tr> 
-        <tr>
-            <td>Database Managment</td>
-            <td>👍👍👍👍</td>
-        </tr> 
-    </table>
-    <hr>
-    <a href=""></a>
-
-   
-
-    
-
-    
+    <div class="content">
+        <h1>Natnael Bekabtu</h1>
+        <a href="index.html" id="learn_more">Learn more</a>
+    </div>
 </body>
 </html>

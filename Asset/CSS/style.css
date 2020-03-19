@@ -1,76 +1,119 @@
-body{
-    background-color:rgb(235, 248, 250);
-    margin: 10px auto;
+*{
+    margin: 0;
+    padding: 0;
 }
-
-.container{
-    background-color: white ;
-    width: 70%;
-    margin-left: 15%;
+.main-window{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
 }
-.container > section{
-        
-    width: 80%;
-    margin-left: 10%;
-    padding: 20px;
-    align-self: center;
-
+.main-content{
+    display: flex;
+    justify-content: center;
 }
-
- article{
-    font-family: sans-serif;
+.nav-bar{
     width: 100%;
-    font-size: 1.5rem;
+    text-align: left;
+    font-size: 14px;   
+}
+
+.article-container{
+    width: 50%;
+}
+.other-post-container{
+    width: 30%;
+    height: 100%;
+
+}
+#main-article{
+    width: 600px;
+}
+
+nav{
+    width: 100%;
+    background-color:#2c5ba8;
+}
+
+nav ul{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    font-size: 1.2rem;
+    padding: 0px;
+    width: 500px;
+    text-align: center;
+}
+nav > ul > li{
+    display: inline;
+    padding-left: 10%;
+
+}
+
+nav ul li a{
+   color: white;
+   line-height: 3em;
+   text-decoration: none;
+}
+
+nav > ul > li a:hover{
+    color: black;
+    transition: 0.2s ease;
+
+}
+
+a:active{
+    color: whitesmoke;
+}
+article{
+    font-family: sans-serif;
+    font-size: 1rem;
     text-align: justify;
     line-height: 1.5em;
 }
-img{
+
+#article1_image{
     width: inherit;
 }
 .title{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
     text-align: left;
+    font-size: 2rem;
 }
 
-.date{
+.author{
     font-style: italic;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: left;
+}
 
+.blog-link-1,.blog-link-2{
+    padding: 30px;
+    
 }
-header > nav{
-    background-color: rgba(26, 74, 145,0.8);
-    position: absolute;
-    top: 0%;
-    left: 10%;
-    width: 80%;
-    padding: 0%;
-}
-nav > ul > li {
-     display: inline;
-     font-size: 1.25rem;
-     
- }
-nav > ul{
-     text-align: center;
-     word-spacing: 10em;
- }
-nav > ul > li > a{
+.blog-link-1 a, .blog-link-2 a{
     text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
- 
-a:link{
-    color: rgb(200, 200, 200);
- }
-nav > ul > li > a:hover{
-     color: white;
-     transition: 0.4s ease;
- }
-  a:visited{
-     color: black;
- }
-  a:active{
-     color: whitesmoke;
- }
+.blog-link-1 a:hover, .blog-link-2 a:hover{
+    text-decoration: underline;
+    color: darkblue;
+}
+.blog-link-2{
+    clear: both;
+}
+.blog-link-1 ul{
+    list-style-type: none;
+}
+.blog-link-1 ul li img{
+    float: left;
+}
+.blog-link-2 ul{
+    list-style-type: none;
+}
+.blog-link-2 ul li img{
+    float: left;
+}
+
+
  
