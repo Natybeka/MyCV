@@ -24,34 +24,44 @@
     <div class="main-content">
         <div class="article-container">
             <article id="main-article">
-                <h1 class="title">Relative Size Units for Responsive Web Design</h1>
-                <p class="author">By Natnael Bekabtu in Desktop. Updated on March 7,2020</p>
+                <h1 class="title">Changes in CSS3</h1>
+                <p class="author">By Natnael Bekabtu in Desktop. Updated on March 18,2020</p>
                 <br>
-                <p>Before the advent of relative  size units, pixel units were largely used to size items in the viewport (available window). <em> px </em> values are exactly intrepreted by the browser as they are. pixel is an absolute size unit 
-                    meaning that it doesn't take into consideration the scalability of the web design when it is used across different devices with different screen sizes and resolutions, not to mention the need for the user to use 
-                    the zoom feature of a browser for better visibility. Other absolute units include cm, mm and pt. Relative length units on the other hand specify a length relative to another property. Examples of relative units include
-                em, % and rem. Each has its own advantage and drawback.  </p>
-                 <p>A responsive web design is one that involves the use CSS and HTML to automatically in order to make a website accessible to various devices (desktop, phones and tablets). Percent value units for length measure the length in proportion
-                    to the parent container. For example, if the there is a div tag inside the body tag and the its width attribute is set to 50%, then the browser translates it to "half the length of the body tag". If the parent container doesn't have a 
-                    specified length attribute value then it goes up the browser tries to find the next parent in DOM tree heirarchy (in the example above the body tag) and take the corresponding relative measurement. A simple example is shown below.
-                </p>
-               
-                <p>Percentage units are commonly used to specify the width and height of containers and to create responsive images. If the width property of an image is set to 100%, the image will be responsive and scales nicely for various devices
-                    A better option in many may be to use the "max-width" or "min-width" attribute, which makes the image scaled up of down if the viewport is larger or smaller than its original size. 
-                </p>
-                <p>Other major units are the <em>rem</em> and  <em>em</em> units. The <em>em</em> is a unit that uses the font size of the <strong> styled</strong> (not the font-size of the parent element) element to translate it into the standard <em> px</em> value. This translation is done by the browser. When using em
-                units, the pixel value is calculated by multiplying the font-size of the element being styled. For example, if a div has a font-size of 19px, a "padding value" of 10em is equivalent to 190px. The problem with using <em>em</em> arises when elements 
-                inherit font sizes from parent containers. Suppose we have a page with default font size (usually 16px) and a child div inside it with a padding of 1.5em, that div will inherit the font-size of 16px from the root element. This means that the padding is
-                equivalent to 24px. If another div is then wrapped around the first div and set its font-size to 1.25em, it will inherit the root font-size of 16px and multiply it by 1.25 to get 20px. Adding a padding value of 1.5em would now equate to 30px. If wee keep
-                adding div tags to this heirarchy with <em>em</em> based font-sizes the scaling effect for the font-size and padding attributes will be compounded, which will greatly hinder the visibility of the website. 
-                This is when using the <em>rem</em> unit would come in handy. The <em>rem</em> unit uses the font-size of the parent element rather than the styled element.
-            </p>
-            <p>
-                These three units can be used in conjunction to create a responsive website. Although web developers may not exactly agree on which unit to use where, most recommend some guidelines to maintain responsiveness.
-                 The percentage unit is optimal for image and div sizing and boosts their scalability. It is also not conventional to use <em>em</em> unit for font-size attributes because the resulting typography attributes like the 
-                 padding and margin will not be proportional. Instead <em>rem</em> is recommended for setting the font-size attribute because it inherts attributes directly from the parent element. This gives more consistent resizing and
-                 ensures whatever default size a user's browser may have, the layout will adjust accordingly.    
-            </p>
+                <p>CSS, which stands for Cascading style sheet, is a tool used to format the layout of webpages including text, tables, and divs. The main advantage of CSS was to help developers create a uniform look across multiple pages.
+                    The first version of CSS, CSS1, became the official recommendation in December of 1996. The current recommended version CSS3 became the W3 consortium standard on June 7, 2011 and with it many chages had come into effect
+                    . Instead of defining all features in a single, large specification like CSS 2, CSS 3 is divided into several separate documents called "modules". Each module adds new capability or extends features defined in CSS 2, 
+                    
+                    over preserving backward compatibility.
+                    Some modules such as Selectors, Namespaces, Color and Media Queries are considered stable and are either in Candidate Recommendation or Proposed Recommendation status.</p>
+                    <br>
+                    <h2>Specific Changes and Features in CSS3</h2>
+                    <ol>
+                        <li><strong> The Box-Shadow property:</strong>
+                            This feature adds a shadow to an HTML element. Multiple effects can also be added separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color.
+                        </li>
+                        <li><strong>Opacity: </strong>This styling attribute enable customization of an element's transparency. The given value ranges from 1 (the default value) to 0 (fully transparent) 
+                        
+                        </li>
+                        <li><strong>Rounded Corners: </strong>
+                            Corners of box elements can be rounded using the border-radius attribute. This simple line works effectively with square boxes.
+                        </li>
+                        <li><strong>Attribute Selectors: </strong>In addition to ids and classes elements to be styled can be selected using their attributes.</li>
+                        <li><strong>New Color Inputs:</strong> with the addition of the Opacity attribute new color inputs were incorporated into CSS3.
+                            <ul style="list-style-type: none;">
+                                <li><strong>RGBA: </strong>
+                                    added alpha input in addition to red,green and blue values for color. alpha signifies how much the color should be transparent.
+                                </li>
+                                <li><strong>HSL and HSLA:</strong>
+                                    The hsl() function define colors using the Hue-saturation-lightness model (HSL). HSL stands for hue, saturation, and lightness - and represents a cylindrical-coordinate representation of colors. hue is measured in degree or rad while the rest are measured in percentages.
+                                </li>
+                                <li><strong>Gradient Colors: </strong>CSS gradients display smooth transitions between two or more specified colors.</li>
+                            </ul> 
+
+                        </li>
+                        <li><strong>Addition of :root pseudoclass: </strong> A few more pseudo-class selectors were added in CSS3. The :root selector allows designers to point to the root elements. A total of 19 new pseudoclasses were added to CSS3. These include :nth-child(n), :nth-last-child(n) , :nth-of-type, :enabled ...etc.
+                        </li>
+                        <li><strong>Multiple background images: </strong> In CSS3, there’s no need to include an element for every background image; it provides us with the ability to add more than one background image to any element, even to pseudo-elements.</li>
+                    </ol>
             </article> 
         </div>
             
@@ -61,8 +71,8 @@
             <div class="blog-link-1">
                 <ul>
                 <li>
-                    <a href="blog-post-2.html"><img src="./Asset/Images/font-size.png" alt="font-size" width="100px" height="100px"></a>
-                    &nbsp;&nbsp;<a href="blog-post-2.html">What is meant by deafult 16px font-size </a>
+                    <a href="blog.html"><img src="./Asset/Images/responsive_web_design.jfif" alt="font-size" width="100px" height="100px"></a>
+                    <a href="blog.html">Relative Size Units for Responsive Web  Design</a>
                 </li>
             </ul>
             </div>
@@ -70,8 +80,8 @@
             <div class="blog-link-2">
                 <ul>
                     <li>
-                        <img src="./Asset/Images/CSS3.png" alt="CSS3" width="100px" height="100px">
-                        &nbsp;&nbsp;<a href="#">Changes in CSS3</a>
+                        <a href="blog-post-2.html"><img src="./Asset/Images/font-size.png" alt="font-size" width="100px" height="100px"></a>
+                        &nbsp;&nbsp;<a href="blog-post-2.html">What is meant by deafult 16px font-size </a>
                     </li>
                 </ul>
             </div>
