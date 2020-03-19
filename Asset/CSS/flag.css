@@ -1,0 +1,297 @@
+body {background: beige}
+.flag-container-1,.flag-container-2,.flag-container-3{
+    display: flex;
+    justify-content: space-between;
+}
+.flag-1,.flag-2,.flag-3,.flag-4,.flag-5,.flag-6,.flag-7,.flag-8,.flag-9,.flag-10,.flag-11,.flag-12{
+    flex-basis:22%;
+    height: 200px;
+    box-shadow:2px 1px 2px 1px;
+    background-color: burlywood;
+}
+.flag-1{
+    display: flex;
+    flex-direction:column;
+}
+.flag-1 .box-1{
+    flex: 1;
+    background-color: rgb(189, 42, 54 );
+}
+.flag-1 .box-2{
+    flex:1;
+    background-color: rgb(228, 239, 240);
+}
+.flag-1 .box-3{
+    flex:1;
+    background-color: rgb(46, 46, 180);
+}
+
+
+
+.flag-2{
+    display: flex;
+    flex-direction: column;
+
+}
+.flag-2 .box-type-1{
+    flex:1;
+    background-color: rgb(34, 40, 138);
+    
+
+}
+.flag-2 .box-type-2{
+    flex:1;
+    background-color: rgb(228, 239, 240);
+}
+.flag-2 .box-type-3{
+    flex:2.2;
+    background-color: rgb(189, 42, 54 );
+}
+
+.flag-3{
+    display: flex;
+    flex-direction:column;
+}
+.flag-3 .box-1{
+    flex: 1;
+    background-color: rgb(189, 42, 54 );
+}
+.flag-3 .box-2{
+    flex:2;
+    background-color: yellow;
+}
+.flag-3 .box-3{
+    flex:1;
+    background-color: rgb(189, 42, 54 );
+}
+
+
+.flag-4{
+    display: flex;
+}
+.flag-4 .box-1{
+    flex: 1;
+    background-color: black;
+}
+.flag-4 .box-2{
+    flex:1;
+    background-color: yellow;
+}
+.flag-4 .box-3{
+    flex:1;
+    background-color: rgb(189, 42, 54 );
+}
+
+.name-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.name-container h3{
+    flex: 1;
+    margin-left: 8%;
+    flex-basis: 22%;
+}
+
+.flag-5{
+    display: flex;
+}
+.flag-5 .box-1{
+    flex: 1;
+    background-color: rgb(56, 56, 204);
+}
+.flag-5 .box-2{
+    flex:1;
+    background-color: white;
+}
+.flag-5 .box-3{
+    flex:1;
+    background-color: rgb(189, 42, 54 );
+}
+
+.flag-6{
+    display: flex;
+    flex-direction: column;
+}
+.flag-6 .box-1{
+    flex: 1;
+    background-color: rgb(190, 142, 7);
+}
+.flag-6 .box-2{
+    flex:1;
+    background-color: white;
+}
+.flag-6 .box-2 .symbol{
+    width: 3.5em;
+    height: 3.5em;
+    position: relative;
+    border: 0.3em solid navy;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.flag-6 .box-2 .symbol:before{
+    content: "";
+    position: absolute;
+    top:1.45em;
+    left: 1.45em;
+    width: 0.6em;
+    height: 0.6em;
+    background-color: navy;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.spoke{
+    width: 0.2em;
+    height: 0;
+    position: absolute;
+    top: 1.58em;
+    left: 1.76em;
+    border-top: 0.12em solid transparent;
+    border-right: 0.8em solid navy;
+    border-bottom: 0.12em solid transparent;
+    transform-origin: 0 0.12em;
+  
+}
+.spoke:before{
+    content: "";
+    position:absolute;
+    width: 0;
+    height: 0;
+    top: -0.15em;
+    left: 0.8em;
+    border-top: 0.01em solid transparent;
+    border-left: 1em solid navy;
+    border-bottom: 0.12em solid transparent;
+}
+.spoke:after{
+    content: "";
+    position:absolute;
+    width: 0.3em;
+    height: 0.3em;
+    background-color: navy;
+    top: 0.22em;
+    left: 1.67em;
+    border-radius: 50%;
+
+}
+.spoke1{
+    transform: rotate(0deg);
+}
+.spoke2{
+    transform: rotate(15deg);
+}
+.spoke3{
+    transform: rotate(30deg);
+}
+.spoke4{
+    transform: rotate(45deg);
+}
+.spoke5{
+    transform: rotate(60deg);
+}
+.spoke6{
+    transform: rotate(75deg);
+}
+.spoke7{
+    transform: rotate(90deg);
+}
+.spoke8{
+    transform: rotate(105deg);
+}
+.spoke9{
+    transform: rotate(120deg);
+}
+.spoke10{
+    transform: rotate(135deg);
+}
+.spoke11{
+    transform: rotate(150deg);
+}
+.spoke12{
+    transform: rotate(165deg);
+}
+.spoke13{
+    transform: rotate(180deg);
+}
+.spoke14{
+    transform: rotate(195deg);
+}
+.spoke15{
+    transform: rotate(210deg);
+}
+.spoke16{
+    transform: rotate(225deg);
+}
+.spoke17{
+    transform: rotate(240deg);
+}
+.spoke18{
+    transform: rotate(255deg);
+}
+.spoke19{
+    transform: rotate(270deg);
+}
+.spoke20{
+    transform: rotate(285deg);
+}
+.spoke21{
+    transform: rotate(300deg);
+}
+.spoke22{
+    transform: rotate(315deg);
+}
+.spoke23{
+    transform: rotate(330deg);
+}
+.spoke24{
+    transform: rotate(345deg);
+}
+.flag-6 .box-3{
+    flex:1;
+    background-color: rgb(38, 192, 59);
+}
+.flag-7{
+    display: flex;
+    flex-direction: column;
+}
+.flag-7 .box-1{
+    flex: 1;
+    background-color: rgb(44, 187, 44);
+}
+.flag-7 .box-2{
+    flex:1;
+    background-color: rgb(255, 251, 27);
+}
+.flag-7 .box-3{
+    flex:1;
+    background-color: rgb(214, 34, 49);
+}
+
+.flag-8 {
+      background: linear-gradient(to right, transparent 30%, #FECC00 30%, #FECC00 45%, transparent 0), 
+      linear-gradient(to bottom, transparent 38%, #FECC00 38%, #FECC00 59%, transparent 0), #006AA7; 
+}
+.flag-9 {
+    background: linear-gradient(to right, transparent 28%, white 28%, white 34%, transparent 0), 
+    linear-gradient(to bottom, transparent 40%, white 38%, white 49%, transparent 0), red; 
+}
+.name-container-2{
+    display: flex;
+    flex-direction: row;
+}
+.flag-10 {
+    
+      background: linear-gradient(to bottom, transparent calc(100% / 3), white 20%, white calc(100% / 3 * 2), transparent 0), linear-gradient(to right, transparent calc(100% / 3), white calc(100% / 3), white calc(100% / 3 * 2), transparent 0), #FF0000;
+    
+      background-size: 100px 100px;
+    
+      background-repeat: no-repeat;
+    
+      background-position: 110px 50px; }
+    
+
+
+
+
