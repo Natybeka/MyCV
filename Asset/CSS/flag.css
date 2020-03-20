@@ -252,22 +252,22 @@ body {background: beige}
     flex:1;
     background-color: rgb(38, 192, 59);
 }
-.flag-7{
-    display: flex;
-    flex-direction: column;
+.flag-7 {
+      background: linear-gradient(90deg, white 25%, #8D1B3D 25%);
+      position: relative;  
 }
-.flag-7 .box-1{
-    flex: 1;
-    background-color: rgb(44, 187, 44);
+.flag-7:before{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "";
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(160deg,white 30%,transparent 12%) 0 7px,
+    linear-gradient(20deg,white 30%,transparent 12%) 0 7px;
+    background-size: 20px 11px;
 }
-.flag-7 .box-2{
-    flex:1;
-    background-color: rgb(255, 251, 27);
-}
-.flag-7 .box-3{
-    flex:1;
-    background-color: rgb(214, 34, 49);
-}
+
 
 .flag-8 {
       background: linear-gradient(to right, transparent 30%, #FECC00 30%, #FECC00 45%, transparent 0), 
@@ -282,14 +282,19 @@ body {background: beige}
     flex-direction: row;
 }
 .flag-10 {
-    
       background: linear-gradient(to bottom, transparent calc(100% / 3), white 20%, white calc(100% / 3 * 2), transparent 0), linear-gradient(to right, transparent calc(100% / 3), white calc(100% / 3), white calc(100% / 3 * 2), transparent 0), #FF0000;
-    
       background-size: 100px 100px;
-    
       background-repeat: no-repeat;
-    
-      background-position: 110px 50px; }
+      background-position: 110px 50px; 
+}
+
+.flag-11{
+    background: linear-gradient(145deg, #27a13d 40%,#f3cb1a 40%,#f3cb1a 43%,black 43%,black 57%,#f3cb1a 57%, #f3cb1a 60%, #05a6e0 60%);
+}
+
+.flag-12{
+    background: linear-gradient(45deg,transparent 40%, white 40%,white 43%,black 43%,black 57%,black 57%, white 57%,white 60%,transparent 0),red;
+}
     
 
 

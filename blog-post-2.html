@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="./Asset/CSS/style.css">
+    <link rel="icon" href="./Asset/Images/icon_file.ico">
 
 </head>
 <body>
@@ -24,34 +25,14 @@
     <div class="main-content">
         <div class="article-container">
             <article id="main-article">
-                <h1 class="title">Relative Size Units for Responsive Web Design</h1>
-                <p class="author">By Natnael Bekabtu in Desktop. Updated on March 7,2020</p>
+                <h1 class="title">What is meant by default 16px font-size</h1>
+                <p class="author">By Natnael Bekabtu in Desktop. Updated on March 15,2020</p>
                 <br>
-                <p>Before the advent of relative  size units, pixel units were largely used to size items in the viewport (available window). <em> px </em> values are exactly intrepreted by the browser as they are. pixel is an absolute size unit 
+                <p>Pixel units are the most common absolute  unit used to size items in a viewport (available window). <em> px </em> values are exactly intrepreted by the browser as they are. pixel is an absolute size unit 
                     meaning that it doesn't take into consideration the scalability of the web design when it is used across different devices with different screen sizes and resolutions, not to mention the need for the user to use 
                     the zoom feature of a browser for better visibility. Other absolute units include cm, mm and pt. Relative length units on the other hand specify a length relative to another property. Examples of relative units include
-                em, % and rem. Each has its own advantage and drawback.  </p>
-                 <p>A responsive web design is one that involves the use CSS and HTML to automatically in order to make a website accessible to various devices (desktop, phones and tablets). Percent value units for length measure the length in proportion
-                    to the parent container. For example, if the there is a div tag inside the body tag and the its width attribute is set to 50%, then the browser translates it to "half the length of the body tag". If the parent container doesn't have a 
-                    specified length attribute value then it goes up the browser tries to find the next parent in DOM tree heirarchy (in the example above the body tag) and take the corresponding relative measurement. A simple example is shown below.
-                </p>
-               
-                <p>Percentage units are commonly used to specify the width and height of containers and to create responsive images. If the width property of an image is set to 100%, the image will be responsive and scales nicely for various devices
-                    A better option in many may be to use the "max-width" or "min-width" attribute, which makes the image scaled up of down if the viewport is larger or smaller than its original size. 
-                </p>
-                <p>Other major units are the <em>rem</em> and  <em>em</em> units. The <em>em</em> is a unit that uses the font size of the <strong> styled</strong> (not the font-size of the parent element) element to translate it into the standard <em> px</em> value. This translation is done by the browser. When using em
-                units, the pixel value is calculated by multiplying the font-size of the element being styled. For example, if a div has a font-size of 19px, a "padding value" of 10em is equivalent to 190px. The problem with using <em>em</em> arises when elements 
-                inherit font sizes from parent containers. Suppose we have a page with default font size (usually 16px) and a child div inside it with a padding of 1.5em, that div will inherit the font-size of 16px from the root element. This means that the padding is
-                equivalent to 24px. If another div is then wrapped around the first div and set its font-size to 1.25em, it will inherit the root font-size of 16px and multiply it by 1.25 to get 20px. Adding a padding value of 1.5em would now equate to 30px. If wee keep
-                adding div tags to this heirarchy with <em>em</em> based font-sizes the scaling effect for the font-size and padding attributes will be compounded, which will greatly hinder the visibility of the website. 
-                This is when using the <em>rem</em> unit would come in handy. The <em>rem</em> unit uses the font-size of the parent element rather than the styled element.
-            </p>
-            <p>
-                These three units can be used in conjunction to create a responsive website. Although web developers may not exactly agree on which unit to use where, most recommend some guidelines to maintain responsiveness.
-                 The percentage unit is optimal for image and div sizing and boosts their scalability. It is also not conventional to use <em>em</em> unit for font-size attributes because the resulting typography attributes like the 
-                 padding and margin will not be proportional. Instead <em>rem</em> is recommended for setting the font-size attribute because it inherts attributes directly from the parent element. This gives more consistent resizing and
-                 ensures whatever default size a user's browser may have, the layout will adjust accordingly.    
-            </p>
+                em, % and rem.  </p>
+                 
             </article> 
         </div>
             
